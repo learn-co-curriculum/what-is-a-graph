@@ -37,6 +37,24 @@ We can use a number of different underlying data structures to create a graph. F
 
 We suggest you read more about the different methods for representing a graph. Try Googling "adjacency matrix" to get yourself started.
 
+## Our Graph
+
+Today we'll be creating a Graph class that uses a hash/object as the underlying data structure. It'll be an undirected graph consisting of adjacency lists. In other words, each key in the hash/object will have a value that is an array. Each array will be a list of adjacent nodes. Let's take another look at our friends image and then see what it might look like as a graph:
+
+![friends network](./friends.jpg)
+
+```
+{
+  Anne: [Bob, Elisa, Diana],
+  Bob: [Anne, Diana, Carl],
+  Elisa: [Anne, Carl],
+  Carl: [Bob, Elisa, Diana],
+  Diana: [Anne, Bob, Carl]
+}
+```
+
+## Implement a Graph
+
 Use the language of your choosing. We've included starter files for some languages where you can pseudocode, explain your solution and code.
 
 ## Before you start coding:
