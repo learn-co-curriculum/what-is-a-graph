@@ -7,6 +7,7 @@ class Graph
   def is_adjacent(vertex_a, vertex_b)
   end
 
+  # array is an adjacency list
   def add_vertex(vertex, array)
   end
 end

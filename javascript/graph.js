@@ -7,6 +7,7 @@ class Graph {
 
   }
 
+  // array is an adjacency list
   addVertex(vertex, array) {
 
   }
