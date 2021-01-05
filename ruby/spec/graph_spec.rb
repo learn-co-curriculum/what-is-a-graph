@@ -1,4 +1,4 @@
-require "../solutions/graph"
+require "./graph"
 
 RSpec.describe "Graph" do
   let(:graph) { Graph.new([["a", "b", "c"], ["b", "d"]]) }
