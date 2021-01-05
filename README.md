@@ -55,16 +55,17 @@ Today we'll be creating a Graph class that uses a hash/object as the underlying 
 
 ## Implement a Graph Class
 
-Let's see if we can gain a better understanding of graphs by building a Graph class. In the coming days, we'll continue building on this class to add new and exciting features!
+Let's see if we can gain a better understanding of graphs by building a Graph class.
 
 Before we dive in, let's set up some rules:
 
 * Every vertex in the graph has a corresponding key in the Hash/object being used to store the graph
 * All of a vertex's adjacent vertices are listed in an adjacency list stored as the value for that key: `{ a: {"b", "c", "d"} }`
-* All values in an adjency list are unique - there can be no repeats
+* All values in an adjacency list are unique - there can be no repeats
 * The graph consists only of vertices that are connected to other vertices, e.g. there cannot be a key with an empty adjacency list unless there is only one vertex in the entire graph
-    * OK: `{ a: {} }`
-    * Not OK: `{ a: {}, b: {}, c: {} }`
+    * This means we are making a connected graph: one in which there is a path from any vertex to another vertex. Be aware that it is possible to make a disconnected graph.
+    * OK: `{ a: {} }` or `{ a: { "b" }, b: { "a" } }`
+    * Not OK: `{ a: {}, b: {}, c: {} }` or `{ a: { "c" }, b: {}, c: { "a" } }`
 
 ### 1. Initialize a New Object: `initialize(paths)` / `constructor(paths)`
 
