@@ -41,7 +41,7 @@ We suggest you read more about the different methods for representing a graph. T
 
 Today we'll be creating a Graph class that uses a hash/object as the underlying data structure. It'll be an undirected graph consisting of adjacency lists. In other words, each key in the hash/object will have a value that is a set. Each set will be a list of adjacent nodes. Let's take another look at our friends image and then see what it might look like as a graph:
 
-![friends network](./friends.jpg)
+![friends network](https://curriculum-content.s3.amazonaws.com/data-structures-and-algorithms/what-is-a-graph/friends.jpg)
 
 ```
 {
